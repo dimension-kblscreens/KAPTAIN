@@ -1,91 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body, html {
-  height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.bg-img {
-  /* The image used */
-  background-image: url("https://images.pexels.com/photos/10521157/pexels-photo-10521157.jpeg");
-
-  min-height: 380px;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-/* Add styles to the form container */
-.container {
-  position: absolute;
-  right: 0;
-  margin: 20px;
-  max-width: 300px;
-  padding: 16px;
-  background-color: white;
-}
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit button */
-.btn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-</style>
+	<meta charset="utf-8">
+	<meta name="author" content="Kodinger">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>My Login Page &mdash; Bootstrap 4 Login Page Snippet</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/my-login.css">
 </head>
-<body>
+<body class="my-login-page">
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-md-center h-100">
+				<div class="card-wrapper">
+					<div class="brand">
+						<img src="img/logo.jpg" alt="bootstrap 4 login page">
+					</div>
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title">Register</h4>
+							<form action="login.html" class="my-login-validation" novalidate="">
+								<div class="form-group">
+									<label for="Employee ID">Employee ID</label>
+									<input id="empid" type="text" class="form-control" name="empid" required autofocus>
+									<div class="invalid-feedback">
+										What's your name?
+									</div>
+								</div>
 
-<h2>Register for KBL Kaptain</h2>
-<div class="bg-img">
-  <form action="https://dimension-kblscreens.github.io/KAPTAIN/login.html" class="container">
-    <h3>Register</h3>
+								<div class="form-group">
+									<label for="email">E-Mail Address</label>
+									<input id="email" type="email" class="form-control" name="email" required>
+									<div class="invalid-feedback">
+										Your email is invalid
+									</div>
+								</div>
 
-      <label for="empid" class="form-label">Employee ID:</label>
-      <input type="text" class="form-control" id="empid" placeholder="Enter Employee ID" name="empid" required>
-               
-	  <label for="Password" class="form-label">Password:</label>
-      <input type="password" class="form-control" id="Password" placeholder="Enter your Password" name="Password" required>
+								<div class="form-group">
+									<label for="password">Password</label>
+									<input id="password" type="password" class="form-control" name="password" required data-eye>
+									<div class="invalid-feedback">
+										Password is required
+									</div>
+								</div>
 
-	  <input type="checkbox" class="form-control" id="Checkbox"  name="Checkbox" required>
-	  <small><label for="Checkbox" class="form-label">By checking this, you agree to accept our Terms & Conditions:</label></small>
-         
-    <button type="submit" class="btn">Register</button>
-  </form>
-</div>
+								<div class="form-group">
+									<div class="custom-checkbox custom-control">
+										<input type="checkbox" name="agree" id="agree" class="custom-control-input" required="">
+										<label for="agree" class="custom-control-label">I agree to the <a href="#">Terms and Conditions</a></label>
+										<div class="invalid-feedback">
+											You must agree with our Terms and Conditions
+										</div>
+									</div>
+								</div>
 
-<p>All design copyrighs reserved by Digital Dimensions</p>
+								<div class="form-group m-0">
+									<button type="submit" class="btn btn-primary btn-block">
+										Register
+									</button>
+								</div>
+								<div class="mt-4 text-center">
+									Already have an account? <a href="index.html">Login</a>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="footer">
+						Copyright &copy; 2017 &mdash; Your Company 
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/my-login.js"></script>
 </body>
 </html>
