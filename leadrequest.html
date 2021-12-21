@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+<!-- SideNav CSS starts here -->
+
+<style>
+.avatar {
+  vertical-align: middle;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 14px;}
+}
+</style>
+
+<!-- SideNav CSS ends here -->
+
+<!-- Service Request table CSS starts here -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+
+<!-- Table CSS Starts here -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+</style>
+
+<!-- Table CSS ends here -->
+
+<!-- Service Request table CSS ends here -->
+
+
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <center><img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"><a href="userprofile.html">John Doe&nbsp;&nbsp;&nbsp;&nbsp;</a></center>
+  
+  <a href="dashboard.html"><i class="fa fa-home"></i>&nbsp;Dasboard</a>
+  <a href="servicerequest.html"><i class="fa fa-check-circle"></i>&nbsp;Service Request</a>
+  <a href="leadrequest.html"><i class="fa fa-user"></i>&nbsp;Lead Request</a>
+  <a href="complaint.html"><i class="fa fa-plus-square"></i>&nbsp;Raise Complaint</a>
+  <a href="admincontrol.html"><i class='fa fa-cog'></i>&nbsp;Admin Controls</a>
+  <a href="search.html"><i class='fa fa-search'></i>&nbsp;Search</a>
+  <a href="reports.html"><i class='fa fa-table'></i>&nbsp;Reports</a>
+<a href="Messages.html"><i class='fa fa-envelope'></i>&nbsp;Messages</a>
+<a href="login.html"><i class='fa fa-sign-out'></i>&nbsp;Log Out</a>
+
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;&nbsp;&nbsp;Lead Request</span>
+</div>
+<!-- Service Request Body Start here -->
+
+<div class="container p-5 my-5 bg-info">
+<h5>Select Lead Request from below list:</h5>
+<button type="button" class="collapsible">Savings Account</button>
+<div class="content">
+  <table>
+  <tr>
+    <th>SR Number</th>
+    <th>Service Request Name</th>
+    <th>Action</th>
+  </tr>
+<tr>	<TD>	LR0001	</TD>	
+	<TD>Nagarik Bachat Khata	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0002	</TD>	
+	<TD>	Pariwar Surakshya Bachat Khata	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0003	</TD>	
+	<TD>	Kumari Remit Bachat Khata	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0004	</TD>	
+	<TD>	Recurring Fixed Deposit	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0005	</TD>	
+	<TD>	Saving Deposit Premium
+	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0006	</TD>	
+	<TD>	Swastha Jeevan Bachat Khata
+	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0007	</TD>	
+	<TD>	Kumari Salary Saving Account
+	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0008	</TD>	
+	<TD>	Shareholders' Saving Account
+	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0009	</TD>	
+	<TD>	Kumari Big Savings Khata
+	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0010	</TD>	
+	<TD>	Kumari Smart Bachat Khata
+	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0011	</TD>	
+	<TD>	Kumari Savings
+	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0012	</TD>	
+	<TD>	Kumari Youth Saving Account
+</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0013	</TD>	
+	<TD>	Kumari Twinkle Star Savings
+	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0014	</TD>	
+	<TD>	Kumari Subha Laxmi Savings
+ 	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0015	</TD>	
+	<TD>	50 Plus Savings
+	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0016	</TD>	
+	<TD>	Sabaiko Bachat Khata
+	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0017	</TD>	
+	<TD>	Kumari Premium Salary Account
+	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+</table>
+</div>
+<button type="button" class="collapsible">Loan</button>
+<div class="content">
+  <table>
+  <tr>
+    <th>SR Number</th>
+    <th>Service Request Name</th>
+    <th>Action</th>
+  </tr>
+
+<tr>	<TD>	LR0018	</TD>	
+	<TD>	Home Loan
+	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0019	</TD>	
+	<TD>	Education Loan
+	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0020	</TD>	
+	<TD>	Auto Loans
+	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0021	</TD>	
+	<TD>	Kumari Shuvalabh Ghar Gharayesi Karja
+	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+<tr>	<TD>	LR0022	</TD>	
+	<TD>	Kumari Margin Lending
+ 	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+	
+<tr>	<TD>	LR0023	</TD>	
+	<TD>	Kumari Foneloan
+
+ 	</TD>	
+	<TD>	<a href="#">Apply Now</a>	</TD>	</TR>
+	
+</table>
+</div>
+
+
+
+
+
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<!-- Service Request Body ends here -->
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</body>
+</html> 

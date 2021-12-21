@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+<!-- SideNav CSS starts here -->
+
+<style>
+.avatar {
+  vertical-align: middle;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 14px;}
+}
+</style>
+
+<!-- SideNav CSS ends here -->
+
+<!-- SRLandingpage CSS Starts here -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("#");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+
+
+</style>
+
+<!-- SRLandingpage CSS Ends here -->
+<!-- Outline button css starts here -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: #04AA6D;
+  color: green;
+}
+
+.success:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Blue */
+.info {
+  border-color: #2196F3;
+  color: dodgerblue;
+}
+
+.info:hover {
+  background: #2196F3;
+  color: white;
+}
+
+/* Orange */
+.warning {
+  border-color: #ff9800;
+  color: orange;
+}
+
+.warning:hover {
+  background: #ff9800;
+  color: white;
+}
+
+/* Red */
+.danger {
+  border-color: #f44336;
+  color: red;
+}
+
+.danger:hover {
+  background: #f44336;
+  color: white;
+}
+
+/* Gray */
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+</style>
+
+<!-- Outline button css ends here -->
+
+
+
+
+</head>
+
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <center><img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"><a href="userprofile.html">John Doe&nbsp;&nbsp;&nbsp;&nbsp;</a></center>
+  
+  <a href="dashboard.html"><i class="fa fa-home"></i>&nbsp;Dasboard</a>
+  <a href="servicerequest.html"><i class="fa fa-check-circle"></i>&nbsp;Service Request</a>
+  <a href="leadrequest.html"><i class="fa fa-user"></i>&nbsp;Lead Request</a>
+  <a href="complaint.html"><i class="fa fa-plus-square"></i>&nbsp;Raise Complaint</a>
+  <a href="admincontrol.html"><i class='fa fa-cog'></i>&nbsp;Admin Controls</a>
+  <a href="search.html"><i class='fa fa-search'></i>&nbsp;Search</a>
+  <a href="reports.html"><i class='fa fa-table'></i>&nbsp;Reports</a>
+<a href="Messages.html"><i class='fa fa-envelope'></i>&nbsp;Messages</a>
+<a href="login.html"><i class='fa fa-sign-out'></i>&nbsp;Log Out</a>
+ 
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;&nbsp;&nbsp;Service Request Landing Page</span>
+</div>
+
+<!-- SRLandingpage body starts here -->
+<div class="container p-5 my-5 border">
+
+<h3>Service Request Details for Savings Account Opening</h3>
+
+<table>
+  <tr>
+    <th>Particulars</th>
+    <th>Details</th>
+    <th>Supporting Attached?</th>
+  </tr>
+  <tr>
+    <td>Service Request Number</td>
+    <td>SR00001</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Customer Name</td>
+    <td>Neminath Singh</td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>Customer Address</td>
+    <td>Address comes here</td>
+    <td><a href="#">AddressProof.pdf</a></td>
+   </tr>
+   <tr>
+    <td>Customer Nationality</td>
+    <td>Nepal</td>
+    <td><a href="#">Citizenshipid.pdf</a></td>
+   </tr>
+   <tr>
+    <td>Existing Bank Customer</td>
+    <td>New Customer</td>
+    <td></td>
+   </tr>
+   <tr>
+    <td>Product Variant Requested</td>
+    <td>Pariwar Surakshya Bachat Khata</td>
+    <td></td>
+   </tr>
+   <tr>
+    <td>KYC Documents</td>
+    <td>KYC Documents received</td>
+    <td><a href="#">KYC Documents</a></td>
+   </tr>
+   <tr>
+    <td>Photo</td>
+    <td>Photo received</td>
+    <td><a href="#">Photo</a></td>
+   </tr>
+   <tr>
+    <td>Other details for account opening</td>
+    <td>Other details received</td>
+    <td><a href="#">View Other details</a></td>
+   </tr>
+</table>
+<BR></BR>
+
+<center>
+<button class="btn success" onclick="alert('Service Request is approved by you!')">Approve</button>
+<button class="btn warning" onclick="alert('Service Request is assigned to STAFF-X by you!')">Repair</button>
+<button class="btn danger" onclick="alert('Service Request is rejected by you!')">Reject</button>
+<center>
+
+
+
+</div>
+
+<!-- SR Landing page body ends here -->
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</body>
+</html> 

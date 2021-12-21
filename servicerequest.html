@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+<!-- SideNav CSS starts here -->
+
+<style>
+.avatar {
+  vertical-align: middle;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 14px;}
+}
+</style>
+
+<!-- SideNav CSS ends here -->
+
+<!-- Service Request table CSS starts here -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+
+<!-- Table CSS Starts here -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+</style>
+
+<!-- Table CSS ends here -->
+
+<!-- Service Request table CSS ends here -->
+
+
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <center><img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"><a href="userprofile.html">John Doe&nbsp;&nbsp;&nbsp;&nbsp;</a></center>
+  
+  <a href="dashboard.html"><i class="fa fa-home"></i>&nbsp;Dasboard</a>
+  <a href="servicerequest.html"><i class="fa fa-check-circle"></i>&nbsp;Service Request</a>
+  <a href="leadrequest.html"><i class="fa fa-user"></i>&nbsp;Lead Request</a>
+    <a href="complaint.html"><i class="fa fa-plus-square"></i>&nbsp;Raise Complaint</a>
+  <a href="admincontrol.html"><i class='fa fa-cog'></i>&nbsp;Admin Controls</a>
+  <a href="search.html"><i class='fa fa-search'></i>&nbsp;Search</a>
+  <a href="reports.html"><i class='fa fa-table'></i>&nbsp;Reports</a>
+<a href="Messages.html"><i class='fa fa-envelope'></i>&nbsp;Messages</a>
+<a href="login.html"><i class='fa fa-sign-out'></i>&nbsp;Log Out</a>
+
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;&nbsp;&nbsp;Service Request</span>
+</div>
+<!-- Service Request Body Start here -->
+
+<div class="container p-5 my-5 bg-info">
+<h5>Select Service Request from below list:</h5>
+<button type="button" class="collapsible">Savings Account</button>
+<div class="content">
+  <table>
+  <tr>
+    <th>SR Number</th>
+    <th>Service Request Name</th>
+    <th>Action</th>
+  </tr>
+<tr>	<TD>	SRR0001	</TD>	
+	<TD>	Account Opening with KYC detail collection (along with status tracking)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0002	</TD>	
+	<TD>	Full KYC Update (signature & biometric missing)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0003	</TD>	
+	<TD>	Email ID and Mobile Number Change	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0004	</TD>	
+	<TD>	Address, Family Names, and other information change Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0005	</TD>	
+	<TD>	Nominee Change Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0006	</TD>	
+	<TD>	Signature Amendment Form	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0007	</TD>	
+	<TD>	Account product change Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0008	</TD>	
+	<TD>	Signatory Change Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0009	</TD>	
+	<TD>	Minor Status Change	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0010	</TD>	
+	<TD>	Dormant Release	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0011	</TD>	
+	<TD>	debit and credit restriction and release	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0012	</TD>	
+	<TD>	Mandate (Power of attorney to operate account) Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0013	</TD>	
+	<TD>	Account Closure Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0014	</TD>	
+	<TD>	Account balance claim in case of deceased 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0015	</TD>	
+	<TD>	FATCA Declaration Form	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0016	</TD>	
+	<TD>	PSBK Declaration Form	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0017	</TD>	
+	<TD>	Cash Deposit including (Generating Deposit Slips)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0018	</TD>	
+	<TD>	Disbursement of social security fund etc	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0019	</TD>	
+	<TD>	Cash Withdrawal (by Cheque)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0020	</TD>	
+	<TD>	Cash Withdrawal (by QR code)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0021	</TD>	
+	<TD>	Cheque book Yes (Collect from Branch)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0022	</TD>	
+	<TD>	Cheque Book Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0023	</TD>	
+	<TD>	Reporting of Loss of Cheque book (unused chq leaves to be blocked)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0024	</TD>	
+	<TD>	Deposit of Chq - (drawn on KBL Chq & o/w Clearing Chq)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0025	</TD>	
+	<TD>	Stop Payment - cheque	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0026	</TD>	
+	<TD>	Release of Stop Payment	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0027	</TD>	
+	<TD>	Good for Payment (GFP) Yes (Issued chq)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0028	</TD>	
+	<TD>	Cancellation of Good for Payment (Issued chq)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0029	</TD>	
+	<TD>	Blacklisting Due to Cheque Bounce Case (payee initiated complaint)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0030	</TD>	
+	<TD>	Manager Chq (MC)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0031	</TD>	
+	<TD>	Demand Draft (DD) including forex DD	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0032	</TD>	
+	<TD>	Placing SI/Schedule Payment	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0033	</TD>	
+	<TD>	Removing/Cancellation of SI/Schedule Payment	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0034	</TD>	
+	<TD>	Add Payee                             	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0035	</TD>	
+	<TD>	Instant Fund Transfer                (within KBL) 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0036	</TD>	
+	<TD>	Link Payer account in Connect IPS 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0037	</TD>	
+	<TD>	Fund Transfer - Swift	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0038	</TD>	
+	<TD>	Fund Transfer - IPS 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0039	</TD>	
+	<TD>	Fund Transfer - RTGS	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0040	</TD>	
+	<TD>	Fund Transfer - cIPS	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0041	</TD>	
+	<TD>	Fund Transfer -Cheque Deposit for collection	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0042	</TD>	
+	<TD>	Agency based Inward Remittance (Domestic and International)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0043	</TD>	
+	<TD>	Agency based outward Remittance (Domestic)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0044	</TD>	
+	<TD>	Bill Payment / School fees / Insurance / Prepaid/ DTH top up / Load 3rd party Wallet	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0045	</TD>	
+	<TD>	New FD Yes of Existing Customer	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0046	</TD>	
+	<TD>	Renewal of FD	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0047	</TD>	
+	<TD>	Pre-maturity of FD 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0048	</TD>	
+	<TD>	New Recurring Deposit	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0049	</TD>	
+	<TD>	Pre-maturity of RD	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0050	</TD>	
+	<TD>	Safe Deposit Facility Application	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0051	</TD>	
+	<TD>	Replacement and collection of Locker key	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0052	</TD>	
+	<TD>	Co-lesse in Safe Deposit Application	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0053	</TD>	
+	<TD>	Termination of Safe Deposit Facility	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0054	</TD>	
+	<TD>	Balance Certificate Application	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0055	</TD>	
+	<TD>	Printed Account Statement - Collect at branch  / email pdf without signature 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0056	</TD>	
+	<TD>	View Account Balance	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0057	</TD>	
+	<TD>	View Mini Statement	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0058	</TD>	
+	<TD>	View Detailed Statement	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0059	</TD>	
+	<TD>	View Account Details (interest rate, type of account, account opening date, accrued interest)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0060	</TD>	
+	<TD>	View SI/Schedule Payment	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0061	</TD>	
+	<TD>	View Cheque status	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0062	</TD>	
+	<TD>	Insurance Claim form for Applicable Account Schemes	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0063	</TD>	
+	<TD>	Policy Detail Distrubution for applicable schemes	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0064	</TD>	
+	<TD>	QR Application Form	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0065	</TD>	
+	<TD>	QR Cancellation/Release Form	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0066	</TD>	
+	<TD>	QR -Demographic /KYC details changes	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0067	</TD>	
+	<TD>	POS Application Form	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0068	</TD>	
+	<TD>	POS - Demographic /KYC details	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0069	</TD>	
+	<TD>	POS Cancellation Form	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0070	</TD>	
+	<TD>	Application for Payment Instructions	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0071	</TD>	
+	<TD>	Application for Advance Payment	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0072	</TD>	
+	<TD>	Application form for FCY Draft	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0073	</TD>	
+	<TD>	FCY Exchange Against Passport (FEER)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+</table>
+</div>
+<button type="button" class="collapsible">Mobile Banking</button>
+<div class="content">
+  <table>
+  <tr>
+    <th>SR Number</th>
+    <th>Service Request Name</th>
+    <th>Action</th>
+  </tr>
+
+<tr>	<TD>	SRR0075	</TD>	
+	<TD>	Mobile Banking Renewal on auto renewal failure	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0076	</TD>	
+	<TD>	Mobile Banking block	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0077	</TD>	
+	<TD>	Mobile Banking unblock	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0078	</TD>	
+	<TD>	Mobile Banking cancellation	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0079	</TD>	
+	<TD>	Mobile number change 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+</table>
+</div>
+
+<button type="button" class="collapsible">Internet Banking</button>
+<div class="content">
+  <table>
+  <tr>
+    <th>SR Number</th>
+    <th>Service Request Name</th>
+    <th>Action</th>
+  </tr>
+  <tr>	<TD>	SRR0083	</TD>	
+	<TD>	Internet banking registration 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0085	</TD>	
+	<TD>	Internet Banking unblock	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0086	</TD>	
+	<TD>	Internet Banking cancellation	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0087	</TD>	
+	<TD>	Login Password Reset /Forgot Password	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0089	</TD>	
+	<TD>	Linking CASA Account	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+</table>
+</div>
+
+<button type="button" class="collapsible">Debit Card</button>
+<div class="content">
+  <table>
+  <tr>
+    <th>SR Number</th>
+    <th>Service Request Name</th>
+    <th>Action</th>
+  </tr>
+
+<tr>	<TD>	SRR0092	</TD>	
+	<TD>	Debit Card Application	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0093	</TD>	
+	<TD>	Reissuance of Lost/Damage Card 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0094	</TD>	
+	<TD>	Debit Card Renewal Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0095	</TD>	
+	<TD>	Loyalty Card issuance	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0096	</TD>	
+	<TD>	Debit Card PIN Reset/Re-issue	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0097	</TD>	
+	<TD>	Debit Card Block - Temporary	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0098	</TD>	
+	<TD>	Debit Card Unblock (if blocked by customer) 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0099	</TD>	
+	<TD>	Debit card Limit Management	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0100	</TD>	
+	<TD>	Card Cancellation	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0102	</TD>	
+	<TD>	Debit Card Activation	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0103	</TD>	
+	<TD>	General Dispute with respect to Debit Card (Dispute Settlement Form)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0104	</TD>	
+	<TD>	Linking /De-linking of Debit Card with Accounts	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+</table>
+</div>
+
+<button type="button" class="collapsible">Credit Card</button>
+<div class="content">
+  <table>
+  <tr>
+    <th>SR Number</th>
+    <th>Service Request Name</th>
+    <th>Action</th>
+  </tr>
+<tr>	<TD>	SRR0105	</TD>	
+	<TD>	Credit Card Application	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0106	</TD>	
+	<TD>	Reissuance of Lost/Damage Card	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0107	</TD>	
+	<TD>	Credit Card Renewal in Advance	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0108	</TD>	
+	<TD>	Credit Card Type Change Yes	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0109	</TD>	
+	<TD>	Supplementary Card Yes - Collect from branch	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0110	</TD>	
+	<TD>	Credit Card Block - Temporary	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0111	</TD>	
+	<TD>	Credit Card unblock (if blocked by cardholder)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0112	</TD>	
+	<TD>	Card cancellation	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0113	</TD>	
+	<TD>	Credit Card PIN Reset	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0114	</TD>	
+	<TD>	Transaction Limit Management	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0116	</TD>	
+	<TD>	Credit Card Limit Enhancement	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0117	</TD>	
+	<TD>	Credit Card Auot Payment Option - Set / Change 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0118	</TD>	
+	<TD>	Credit Card TAD payment Yes 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0119	</TD>	
+	<TD>	Card Payment  (any amount between MAD/TAD)-  Manual option 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0120	</TD>	
+	<TD>	Credit Card Statements - Unbilled, Latest, Previous	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+
+
+</table>
+</div>
+
+<button type="button" class="collapsible">Prepaid Card (International / Domestic)</button>
+<div class="content">
+  <table>
+  <tr>
+    <th>SR Number</th>
+    <th>Service Request Name</th>
+    <th>Action</th>
+  </tr>
+<tr>	<TD>	SRR0124	</TD>	
+	<TD>	Application of International Prepaid Card	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0125	</TD>	
+	<TD>	Issuance of Domestic Prepaid Card - Collect from branch 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0126	</TD>	
+	<TD>	Reissuance of Lost/Damage Card - collect from branch 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0127	</TD>	
+	<TD>	Request for Loading (international) - Customers	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0128	</TD>	
+	<TD>	Request for Loading (international) - Non Customers	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0130	</TD>	
+	<TD>	Request for Card unblock (if blocked by cardholder)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0131	</TD>	
+	<TD>	Balance Enquiry 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0132	</TD>	
+	<TD>	Request for Card Closure	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0133	</TD>	
+	<TD>	Refund Of Prepaid Card	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0134	</TD>	
+	<TD>	PIN Counter Reset 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0135	</TD>	
+	<TD>	Forget PIN	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0136	</TD>	
+	<TD>	Transaction Details 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+</table>
+</div>
+
+
+<button type="button" class="collapsible">DEMAT</button>
+<div class="content">
+  <table>
+  <tr>
+    <th>SR Number</th>
+    <th>Service Request Name</th>
+    <th>Action</th>
+  </tr>
+<tr>	<TD>	SRR0137	</TD>	
+	<TD>	Demat Account Opening	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0138	</TD>	
+	<TD>	Status of application	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0139	</TD>	
+	<TD>	New DIS  - collection from branch 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0140	</TD>	
+	<TD>	CASBA Registration - Demat with Kumari Capital	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0141	</TD>	
+	<TD>	CASBA Registration - Demat with Service provider other than Kumari capital	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0142	</TD>	
+	<TD>	Mero share Application Platform registration (Once)	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0143	</TD>	
+	<TD>	CASBA – Share Apply - only for customers who do not have mero share account  	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0144	</TD>	
+	<TD>	Demat Statement - with Kumari Capital	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+</table>
+</div>
+
+<button type="button" class="collapsible">Personal Loan (PL) - Unsecured</button>
+<div class="content">
+  <table>
+  <tr>
+    <th>SR Number</th>
+    <th>Service Request Name</th>
+    <th>Action</th>
+  </tr>
+<tr>	<TD>	SRR0146	</TD>	
+	<TD>	New Loan Application	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0147	</TD>	
+	<TD>	Loan Enhancement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0148	</TD>	
+	<TD>	Overdue Payments	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0149	</TD>	
+	<TD>	Partial Loan Settlement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0150	</TD>	
+	<TD>	Loan Settlement Request 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0152	</TD>	
+	<TD>	Loan Account Statement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0153	</TD>	
+	<TD>	Loan Amortisation statement request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+
+</table>
+</div>
+
+<button type="button" class="collapsible">Home Loan - Secured Loan</button>
+<div class="content">
+  <table>
+  <tr>
+    <th>SR Number</th>
+    <th>Service Request Name</th>
+    <th>Action</th>
+  </tr>
+<tr>	<TD>	SRR0154	</TD>	
+	<TD>	New Loan Application	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0155	</TD>	
+	<TD>	Loan Enhancement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0156	</TD>	
+	<TD>	Disbursement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0158	</TD>	
+	<TD>	Loan Settlement Request 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0159	</TD>	
+	<TD>	Loan Prepayment /Partial Loan settlement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0160	</TD>	
+	<TD>	Partial collateral release Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0161	</TD>	
+	<TD>	Collateral Release Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0162	</TD>	
+	<TD>	Interest Rate Revision Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0163	</TD>	
+	<TD>	Loan Account Statement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0164	</TD>	
+	<TD>	EMI Schedule Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+</table>
+</div>
+
+<button type="button" class="collapsible">Vehicle Loan - Secured</button>
+<div class="content">
+  <table>
+  <tr>
+    <th>SR Number</th>
+    <th>Service Request Name</th>
+    <th>Action</th>
+  </tr>
+<tr>	<TD>	SRR0165	</TD>	
+	<TD>	New Loan Application	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0166	</TD>	
+	<TD>	Part Prepayment /Partial Loan Settlement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0167	</TD>	
+	<TD>	Loan Settlement /Closure Request 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0169	</TD>	
+	<TD>	Collateral Release Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0170	</TD>	
+	<TD>	Interest Rate Revision Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0171	</TD>	
+	<TD>	Loan Account Statement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0172	</TD>	
+	<TD>	EMI Schedule Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+</table>
+</div>
+
+<button type="button" class="collapsible">Personal Loan (PL) - OD - Secured /against FD</button>
+<div class="content">
+  <table>
+  <tr>
+    <th>SR Number</th>
+    <th>Service Request Name</th>
+    <th>Action</th>
+  </tr>
+<tr>	<TD>	SRR0173	</TD>	
+	<TD>	New Loan Application	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0174	</TD>	
+	<TD>	Renewal Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0175	</TD>	
+	<TD>	Loan Enhancement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0177	</TD>	
+	<TD>	OD limit Reduction Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0178	</TD>	
+	<TD>	Loan Settlement Request 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0179	</TD>	
+	<TD>	Collateral Release Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0180	</TD>	
+	<TD>	Interest Rate Revision Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0181	</TD>	
+	<TD>	Collateral Replace Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0182	</TD>	
+	<TD>	Loan Account Statement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+</table>
+</div>
+
+<button type="button" class="collapsible">Marginal Lending (LAS) - Secured</button>
+<div class="content">
+  <table>
+  <tr>
+    <th>SR Number</th>
+    <th>Service Request Name</th>
+    <th>Action</th>
+  </tr>
+<tr>	<TD>	SRR0183	</TD>	
+	<TD>	New Loan Application	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0184	</TD>	
+	<TD>	Renewal Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0185	</TD>	
+	<TD>	Loan Enhancement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0188	</TD>	
+	<TD>	Partial Loan Settlement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0189	</TD>	
+	<TD>	Loan Settlement Request 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0190	</TD>	
+	<TD>	Collateral Release Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0191	</TD>	
+	<TD>	Collateral Replace Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0192	</TD>	
+	<TD>	Interest Rate Revision Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0193	</TD>	
+	<TD>	Loan Account Statement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+
+
+</table>
+</div>
+
+<button type="button" class="collapsible">Term Loan - Secured / Education Loan</button>
+<div class="content">
+  <table>
+  <tr>
+    <th>SR Number</th>
+    <th>Service Request Name</th>
+    <th>Action</th>
+  </tr>
+<tr>	<TD>	SRR0194	</TD>	
+	<TD>	New Loan Application	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0195	</TD>	
+	<TD>	Renewal Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0196	</TD>	
+	<TD>	Loan Enhancement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0198	</TD>	
+	<TD>	Overdue Payments	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0199	</TD>	
+	<TD>	Partial Loan Settlement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0200	</TD>	
+	<TD>	Loan Settlement Request 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0201	</TD>	
+	<TD>	Collateral Release Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0202	</TD>	
+	<TD>	Collateral Replace Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0203	</TD>	
+	<TD>	Interest Rate Revision Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0204	</TD>	
+	<TD>	EMI Reschedulement	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0205	</TD>	
+	<TD>	Loan Account Statement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0206	</TD>	
+	<TD>	EMI Amortisation Schedule Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+</table>
+</div>
+
+<button type="button" class="collapsible">Loan against Sub-Leased Property</button>
+<div class="content">
+  <table>
+  <tr>
+    <th>SR Number</th>
+    <th>Service Request Name</th>
+    <th>Action</th>
+  </tr>
+<tr>	<TD>	SRR0207	</TD>	
+	<TD>	New Loan Application	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0208	</TD>	
+	<TD>	Loan Enhancement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0209	</TD>	
+	<TD>	Disbursement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0211	</TD>	
+	<TD>	Loan Settlement Request 	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0212	</TD>	
+	<TD>	Loan Prepayment /Partial Loan settlement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0213	</TD>	
+	<TD>	Partial collateral release Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0214	</TD>	
+	<TD>	Collateral Release Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0215	</TD>	
+	<TD>	Interest Rate Revision Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0216	</TD>	
+	<TD>	Loan Account Statement Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+<tr>	<TD>	SRR0217	</TD>	
+	<TD>	EMI Schedule Request	</TD>	
+	<TD>	<a href="#">Create</a>	</TD>	</TR>
+
+
+</table>
+</div>
+
+
+
+</table>
+</div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<!-- Service Request Body ends here -->
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</body>
+</html> 

@@ -1,6 +1,280 @@
+<!DOCTYPE html>
 <html>
-<body>
-<h1>Dashboard</h1>
-</body>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
-</html>
+
+<!-- SideNav CSS starts here -->
+
+<style>
+.avatar {
+  vertical-align: middle;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 14px;}
+}
+</style>
+
+<!-- SideNav CSS ends here -->
+
+<!-- Counter CSS starts here -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+}
+
+
+</style>
+
+<!-- Counter CSS ends here -->
+
+<!-- Table CSS starts here -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th {
+  text-align: left;
+  padding: 16px;
+  background-color: #000;
+  color: white;
+}
+
+ 
+td {
+  text-align: left;
+  padding: 16px;
+  color: black;
+}
+
+tr {
+  background-color: #f2f2f2;
+}
+
+</style>
+
+<!-- Counter CSS ends here -->
+
+
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <center><img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"><a href="userprofile.html">John Doe&nbsp;&nbsp;&nbsp;&nbsp;</a></center>
+  
+  <a href="dashboard.html"><i class="fa fa-home"></i>&nbsp;Dasboard</a>
+  <a href="servicerequest.html"><i class="fa fa-check-circle"></i>&nbsp;Service Request</a>
+  <a href="leadrequest.html"><i class="fa fa-user"></i>&nbsp;Lead Request</a>
+  <a href="complaint.html"><i class="fa fa-plus-square"></i>&nbsp;Raise Complaint</a>
+  <a href="admincontrol.html"><i class='fa fa-cog'></i>&nbsp;Admin Controls</a>
+  <a href="search.html"><i class='fa fa-search'></i>&nbsp;Search</a>
+  <a href="reports.html"><i class='fa fa-table'></i>&nbsp;Reports</a>
+<a href="Messages.html"><i class='fa fa-envelope'></i>&nbsp;Messages</a>
+<a href="login.html"><i class='fa fa-sign-out'></i>&nbsp;Log Out</a>
+
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;&nbsp;&nbsp;Dashboard</span>
+</div>
+
+<!-- Counter body starts here -->
+
+<div class="container p-5 my-5 bg-info">
+ <h2>Your Task Dashboard</h2>
+<p>Check pending activities in your or your units tray</p>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-user" style="font-size:50px;"></i></p>
+      <h3>11+</h3>
+      <p>Task assigned to you</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-check" style="font-size:50px;"></i></p>
+      <h3>55+</h3>
+      <p>Task assigned to your unit</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-smile-o" style="font-size:50px;"></i></p>
+      <h3>10+</h3>
+      <p>Need your approval</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-coffee" style="font-size:50px;"></i></p>
+      <h3>100+</h3>
+      <p>Need your units approval</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Counter body ends here -->
+
+<!-- Table body starts here -->
+<div class="container p-5 my-5 bg-info">
+
+<h2>Your Pending Service Request</h2>
+<p>View Pending Service Request in your tray</p>
+
+<table>
+  <tr>
+    <th>Service Request</th>
+    <th>Status</th>
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Savings Account Opening</td>
+    <td>Pending</td>
+    <td>
+    <a href="SRLandpage.html">View Details</a>
+	</td>
+  </tr>
+  <tr>
+    <td>Internet Banking Activation</td>
+    <td>Pending</td>
+    <td>
+    <a href="SRLandpage.html">View Details</a>
+	</td>
+  </tr>
+  <tr>
+    <td>Mobile Banking Activation</td>
+    <td>Pending</td>
+    <td>
+    <a href="SRLandpage.html">View Details</a>
+	</td>
+  </tr>
+</table>
+</div>
+
+<!-- Table body ends here -->
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</body>
+</html> 
